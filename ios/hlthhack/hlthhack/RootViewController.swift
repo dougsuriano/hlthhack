@@ -8,17 +8,20 @@
 
 import UIKit
 
-@objc class RootViewController: UIViewController
+@objc class RootViewController: UITabBarController
 {
-
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        let label = UILabel()
-        label.text = "wiestyfbaby!"
-        view.addSubview(label)
-        label.frame = CGRect(x: 100, y: 100, width: 300, height: 200)
+        let medicationsVC = MyMedicationViewController()
+        let medicationsNavController = UINavigationController(rootViewController: medicationsVC)
+        
+        let historyVC = MedicationHistoryViewController()
+        let historyNavController = UINavigationController(rootViewController: historyVC)
+        
+        setViewControllers([medicationsNavController, historyNavController], animated: true)
     }
 
 }

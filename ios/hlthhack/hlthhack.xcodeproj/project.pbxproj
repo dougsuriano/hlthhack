@@ -13,6 +13,10 @@
 		05BDCBA2209E325A00E546B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBA1209E325A00E546B7 /* main.m */; };
 		05BDCBAC209E325A00E546B7 /* hlthhackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBAB209E325A00E546B7 /* hlthhackTests.m */; };
 		05BDCBB8209E329500E546B7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBB7209E329500E546B7 /* RootViewController.swift */; };
+		05BDCBBA209E39CF00E546B7 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBB9209E39CF00E546B7 /* UIView+Autolayout.swift */; };
+		05BDCBBC209E416800E546B7 /* MyMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBB209E416800E546B7 /* MyMedicationViewController.swift */; };
+		05BDCBBE209E436F00E546B7 /* AddMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBD209E436F00E546B7 /* AddMedicationViewController.swift */; };
+		05BDCBC0209E46CB00E546B7 /* MedicationHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		05BDCBAD209E325A00E546B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05BDCBB6209E329500E546B7 /* hlthhack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hlthhack-Bridging-Header.h"; sourceTree = "<group>"; };
 		05BDCBB7209E329500E546B7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		05BDCBB9209E39CF00E546B7 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
+		05BDCBBB209E416800E546B7 /* MyMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicationViewController.swift; sourceTree = "<group>"; };
+		05BDCBBD209E436F00E546B7 /* AddMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationViewController.swift; sourceTree = "<group>"; };
+		05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationHistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,10 @@
 				05BDCBA1209E325A00E546B7 /* main.m */,
 				05BDCBB7209E329500E546B7 /* RootViewController.swift */,
 				05BDCBB6209E329500E546B7 /* hlthhack-Bridging-Header.h */,
+				05BDCBB9209E39CF00E546B7 /* UIView+Autolayout.swift */,
+				05BDCBBB209E416800E546B7 /* MyMedicationViewController.swift */,
+				05BDCBBD209E436F00E546B7 /* AddMedicationViewController.swift */,
+				05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */,
 			);
 			path = hlthhack;
 			sourceTree = "<group>";
@@ -201,7 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDCBA2209E325A00E546B7 /* main.m in Sources */,
+				05BDCBBE209E436F00E546B7 /* AddMedicationViewController.swift in Sources */,
+				05BDCBC0209E46CB00E546B7 /* MedicationHistoryViewController.swift in Sources */,
+				05BDCBBA209E39CF00E546B7 /* UIView+Autolayout.swift in Sources */,
 				05BDCB94209E325600E546B7 /* AppDelegate.m in Sources */,
+				05BDCBBC209E416800E546B7 /* MyMedicationViewController.swift in Sources */,
 				05BDCBB8209E329500E546B7 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
