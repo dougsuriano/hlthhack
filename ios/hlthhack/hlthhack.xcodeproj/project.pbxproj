@@ -17,6 +17,8 @@
 		05BDCBBC209E416800E546B7 /* MyMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBB209E416800E546B7 /* MyMedicationViewController.swift */; };
 		05BDCBBE209E436F00E546B7 /* AddMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBD209E436F00E546B7 /* AddMedicationViewController.swift */; };
 		05BDCBC0209E46CB00E546B7 /* MedicationHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */; };
+		05BDCBC2209E4CBF00E546B7 /* UIColor+hlth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC1209E4CBF00E546B7 /* UIColor+hlth.swift */; };
+		05BDCBC4209E506000E546B7 /* UILabel+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC3209E506000E546B7 /* UILabel+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		05BDCBBB209E416800E546B7 /* MyMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicationViewController.swift; sourceTree = "<group>"; };
 		05BDCBBD209E436F00E546B7 /* AddMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationViewController.swift; sourceTree = "<group>"; };
 		05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationHistoryViewController.swift; sourceTree = "<group>"; };
+		05BDCBC1209E4CBF00E546B7 /* UIColor+hlth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hlth.swift"; sourceTree = "<group>"; };
+		05BDCBC3209E506000E546B7 /* UILabel+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				05BDCBBB209E416800E546B7 /* MyMedicationViewController.swift */,
 				05BDCBBD209E436F00E546B7 /* AddMedicationViewController.swift */,
 				05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */,
+				05BDCBC1209E4CBF00E546B7 /* UIColor+hlth.swift */,
+				05BDCBC3209E506000E546B7 /* UILabel+Util.swift */,
 			);
 			path = hlthhack;
 			sourceTree = "<group>";
@@ -213,10 +219,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDCBA2209E325A00E546B7 /* main.m in Sources */,
+				05BDCBC4209E506000E546B7 /* UILabel+Util.swift in Sources */,
 				05BDCBBE209E436F00E546B7 /* AddMedicationViewController.swift in Sources */,
 				05BDCBC0209E46CB00E546B7 /* MedicationHistoryViewController.swift in Sources */,
 				05BDCBBA209E39CF00E546B7 /* UIView+Autolayout.swift in Sources */,
 				05BDCB94209E325600E546B7 /* AppDelegate.m in Sources */,
+				05BDCBC2209E4CBF00E546B7 /* UIColor+hlth.swift in Sources */,
 				05BDCBBC209E416800E546B7 /* MyMedicationViewController.swift in Sources */,
 				05BDCBB8209E329500E546B7 /* RootViewController.swift in Sources */,
 			);

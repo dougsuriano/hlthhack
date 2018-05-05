@@ -28,3 +28,13 @@ extension NSLayoutConstraint
         return self
     }
 }
+
+typealias Inset = CGFloat
+
+extension Inset
+{
+    static var small: Inset
+    {
+        return 8.0
+    }
+}
