@@ -9,29 +9,29 @@
 import Foundation
 import UIKit
 
-extension UIColor
+@objc extension UIColor
 {
-    class var hltnYellow: UIColor
+    @objc class var hltnYellow: UIColor
     {
         return UIColor(red: 251.0 / 255.0, green: 232.0 / 255.0, blue: 166.0 / 255.0, alpha: 1.0)
     }
     
-    class var hltnOrange: UIColor
+    @objc class var hltnOrange: UIColor
     {
         return UIColor(red: 244.0 / 255.0, green: 151.0 / 255.0, blue: 108.0 / 255.0, alpha: 1.0)
     }
     
-    class var hltnDarkBlue: UIColor
+    @objc class var hltnDarkBlue: UIColor
     {
         return UIColor(red: 48.0 / 255.0, green: 60.0 / 255.0, blue: 108.0 / 255.0, alpha: 1.0)
     }
     
-    class var hltnLightBlue: UIColor
+    @objc class var hltnLightBlue: UIColor
     {
         return UIColor(red: 180.0 / 255.0, green: 212.0 / 255.0, blue: 229.0 / 255.0, alpha: 1.0)
     }
     
-    class var hltnSeafoam: UIColor
+    @objc class var hltnSeafoam: UIColor
     {
         return UIColor(red: 210.0 / 255.0, green: 253.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
     }
