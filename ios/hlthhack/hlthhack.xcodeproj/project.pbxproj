@@ -19,6 +19,7 @@
 		05BDCBC0209E46CB00E546B7 /* MedicationHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */; };
 		05BDCBC2209E4CBF00E546B7 /* UIColor+hlth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC1209E4CBF00E546B7 /* UIColor+hlth.swift */; };
 		05BDCBC4209E506000E546B7 /* UILabel+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC3209E506000E546B7 /* UILabel+Util.swift */; };
+		05BDCBC6209E773900E546B7 /* UIButton+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC5209E773900E546B7 /* UIButton+Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationHistoryViewController.swift; sourceTree = "<group>"; };
 		05BDCBC1209E4CBF00E546B7 /* UIColor+hlth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hlth.swift"; sourceTree = "<group>"; };
 		05BDCBC3209E506000E546B7 /* UILabel+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Util.swift"; sourceTree = "<group>"; };
+		05BDCBC5209E773900E546B7 /* UIButton+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Util.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */,
 				05BDCBC1209E4CBF00E546B7 /* UIColor+hlth.swift */,
 				05BDCBC3209E506000E546B7 /* UILabel+Util.swift */,
+				05BDCBC5209E773900E546B7 /* UIButton+Util.swift */,
 			);
 			path = hlthhack;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				05BDCBBA209E39CF00E546B7 /* UIView+Autolayout.swift in Sources */,
 				05BDCB94209E325600E546B7 /* AppDelegate.m in Sources */,
 				05BDCBC2209E4CBF00E546B7 /* UIColor+hlth.swift in Sources */,
+				05BDCBC6209E773900E546B7 /* UIButton+Util.swift in Sources */,
 				05BDCBBC209E416800E546B7 /* MyMedicationViewController.swift in Sources */,
 				05BDCBB8209E329500E546B7 /* RootViewController.swift in Sources */,
 			);
