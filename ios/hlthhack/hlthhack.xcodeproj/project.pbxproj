@@ -30,6 +30,7 @@
 		05BDCBD8209EAC7E00E546B7 /* DetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBD7209EAC7E00E546B7 /* DetailsHeaderView.swift */; };
 		05BDCBDA209EB1BF00E546B7 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBD9209EB1BF00E546B7 /* DetailsTableViewCell.swift */; };
 		05BDCBDC209EC5CC00E546B7 /* WhatsWrongModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBDB209EC5CC00E546B7 /* WhatsWrongModalViewController.swift */; };
+		05BDCBDE209EDF1B00E546B7 /* report.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05BDCBDD209EDF1B00E546B7 /* report.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		05BDCBD7209EAC7E00E546B7 /* DetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderView.swift; sourceTree = "<group>"; };
 		05BDCBD9209EB1BF00E546B7 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		05BDCBDB209EC5CC00E546B7 /* WhatsWrongModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsWrongModalViewController.swift; sourceTree = "<group>"; };
+		05BDCBDD209EDF1B00E546B7 /* report.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = report.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				05BDCBC9209E951A00E546B7 /* MeViewController.swift */,
 				05BDCBCB209E9DF900E546B7 /* ProcessingViewController.swift */,
 				05BDCBCD209EA08500E546B7 /* ExportViewController.swift */,
+				05BDCBDD209EDF1B00E546B7 /* report.pdf */,
 				05BDCBD1209EA3D700E546B7 /* history2.pdf */,
 				05BDCBD3209EAAF700E546B7 /* MedicineDetailsViewController.swift */,
 				05BDCBD5209EAB0A00E546B7 /* Medicine.swift */,
@@ -234,6 +237,7 @@
 			files = (
 				05BDCB9F209E325A00E546B7 /* LaunchScreen.storyboard in Resources */,
 				05BDCBD2209EA3D700E546B7 /* history2.pdf in Resources */,
+				05BDCBDE209EDF1B00E546B7 /* report.pdf in Resources */,
 				05BDCB9C209E325A00E546B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

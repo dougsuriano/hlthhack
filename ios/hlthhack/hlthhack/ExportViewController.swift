@@ -26,7 +26,7 @@ class ExportViewController: UIViewController
         
         view.addSubview(webview)
         
-        let path = Bundle.main.path(forResource: "history2", ofType: "pdf")
+        let path = Bundle.main.path(forResource: "report", ofType: "pdf")
         let targetURL = URL(fileURLWithPath: path!)
         let request = URLRequest(url: targetURL)
         webview.loadRequest(request)
