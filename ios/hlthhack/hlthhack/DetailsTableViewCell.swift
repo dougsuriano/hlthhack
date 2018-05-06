@@ -43,7 +43,7 @@ class DetailsTableViewCell: UITableViewCell {
         cardView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: .medium).activate()
         cardView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -.medium).activate()
         cardView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -.medium).activate()
-        cardView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 40.0).activate()
+        cardView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20.0).activate()
         
         iconView.enableAutoLayout()
         iconView.widthAnchor.constraint(equalToConstant: 50.0).activate()

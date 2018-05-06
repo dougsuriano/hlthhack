@@ -8,11 +8,11 @@
 
 import UIKit
 
-class MyMedicationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+class MyMedicationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MedicineTableViewCellDelegate
 {
     let tableView = UITableView(frame: .zero, style: .grouped)
     let reuseIdentifier = "medicineCell"
-    
+        
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -60,12 +60,15 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        guard let tableViewCell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as? MedicineTableViewCell else
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) as? MedicineTableViewCell else
         {
             return UITableViewCell()
         }
         
-        return tableViewCell
+        cell.delegate = self
+        
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
@@ -76,6 +79,18 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
         detailsVC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(detailsVC, animated: true)
         
+    }
+    
+    func goodButtonTapped(_ cell: MedicineTableViewCell)
+    {
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+    
+    func badButtonTapped(_ cell: MedicineTableViewCell)
+    {
+        tableView.beginUpdates()
+        tableView.endUpdates()
     }
 
 }
