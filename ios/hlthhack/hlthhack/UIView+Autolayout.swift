@@ -15,6 +15,15 @@ extension UIView
     {
         translatesAutoresizingMaskIntoConstraints = false
     }
+    
+    func fixToEdges(of view: UIView)
+    {
+        enableAutoLayout()
+        topAnchor.constraint(equalTo: view.topAnchor).activate()
+        trailingAnchor.constraint(equalTo: view.trailingAnchor).activate()
+        bottomAnchor.constraint(equalTo: view.bottomAnchor).activate()
+        leadingAnchor.constraint(equalTo: view.leadingAnchor).activate()
+    }
 
 }
 

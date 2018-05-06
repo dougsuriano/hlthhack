@@ -29,6 +29,7 @@
 		05BDCBD6209EAB0A00E546B7 /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBD5209EAB0A00E546B7 /* Medicine.swift */; };
 		05BDCBD8209EAC7E00E546B7 /* DetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBD7209EAC7E00E546B7 /* DetailsHeaderView.swift */; };
 		05BDCBDA209EB1BF00E546B7 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBD9209EB1BF00E546B7 /* DetailsTableViewCell.swift */; };
+		05BDCBDC209EC5CC00E546B7 /* WhatsWrongModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBDB209EC5CC00E546B7 /* WhatsWrongModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		05BDCBD5209EAB0A00E546B7 /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
 		05BDCBD7209EAC7E00E546B7 /* DetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHeaderView.swift; sourceTree = "<group>"; };
 		05BDCBD9209EB1BF00E546B7 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
+		05BDCBDB209EC5CC00E546B7 /* WhatsWrongModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsWrongModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 				05BDCBD5209EAB0A00E546B7 /* Medicine.swift */,
 				05BDCBD7209EAC7E00E546B7 /* DetailsHeaderView.swift */,
 				05BDCBD9209EB1BF00E546B7 /* DetailsTableViewCell.swift */,
+				05BDCBDB209EC5CC00E546B7 /* WhatsWrongModalViewController.swift */,
 			);
 			path = hlthhack;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDCBC8209E79E900E546B7 /* MedicineTableViewCell.swift in Sources */,
+				05BDCBDC209EC5CC00E546B7 /* WhatsWrongModalViewController.swift in Sources */,
 				05BDCBD4209EAAF700E546B7 /* MedicineDetailsViewController.swift in Sources */,
 				05BDCBA2209E325A00E546B7 /* main.m in Sources */,
 				05BDCBC4209E506000E546B7 /* UILabel+Util.swift in Sources */,

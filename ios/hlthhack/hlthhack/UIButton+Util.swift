@@ -14,8 +14,9 @@ extension UIButton
     class func hltnButton() -> UIButton
     {
         let button = UIButton(type: .custom)
-        button.backgroundColor = .hltnOrange
-        button.setTitleColor(.hltnDarkBlue, for: .normal)
+        button.backgroundColor = .hltnDarkBlue
+        button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 32.0)
         return button
     }
 }

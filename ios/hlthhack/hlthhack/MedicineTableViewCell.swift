@@ -115,6 +115,10 @@ class MedicineTableViewCell: UITableViewCell, FeedbackViewDelegate
         {
             delegate?.goodButtonTapped(self)
         }
+        else
+        {
+            delegate?.badButtonTapped(self)
+        }
     }
 }
 
@@ -158,6 +162,7 @@ class FeedbackView: UIView
         
         badButton.setImage(#imageLiteral(resourceName: "bad_button"), for: .normal)
         addSubview(badButton)
+        badButton.addTarget(self, action: #selector(badButtonTapped(_:)), for: .touchUpInside)
         
         label.enableAutoLayout()
         badButton.enableAutoLayout()
@@ -214,7 +219,7 @@ class FeedbackView: UIView
         layoutIfNeeded()
         
         UIView.animate(withDuration: 0.22, animations: {
-            NSLayoutConstraint.deactivate(self.goodFeedbackAnimationEndState)
+            NSLayoutConstraint.deactivate(self.badFeedbackAnimationEndState)
             NSLayoutConstraint.deactivate(self.awaitingFeedbackContraints)
             NSLayoutConstraint.activate(self.goodFeedbackAnimationEndState)
             self.badButton.alpha = 0.0
@@ -223,6 +228,23 @@ class FeedbackView: UIView
         }) { (_) in
             
             self.delegate?.animationDidEnd(good: true)
+        }
+    }
+    
+    @objc func badButtonTapped(_ sender: AnyObject)
+    {
+        layoutIfNeeded()
+        
+        UIView.animate(withDuration: 0.22, animations: {
+            NSLayoutConstraint.deactivate(self.goodFeedbackAnimationEndState)
+            NSLayoutConstraint.deactivate(self.awaitingFeedbackContraints)
+            NSLayoutConstraint.activate(self.badFeedbackAnimationEndState)
+            self.badButton.alpha = 0.0
+            self.label.alpha = 0.0
+            self.layoutIfNeeded()
+        }) { (_) in
+            
+            self.delegate?.animationDidEnd(good: false)
         }
     }
 }

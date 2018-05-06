@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyMedicationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MedicineTableViewCellDelegate
+class MyMedicationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MedicineTableViewCellDelegate, WhatsWrongModalViewControllerDelegate
 {
     let tableView = UITableView(frame: .zero, style: .grouped)
     let reuseIdentifier = "medicineCell"
@@ -91,6 +91,15 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
     {
         tableView.beginUpdates()
         tableView.endUpdates()
+        
+        let whatsWrongVC = WhatsWrongModalViewController()
+        whatsWrongVC.delegate = self
+        present(whatsWrongVC, animated: true, completion: nil)
+    }
+    
+    func whatsWrongShouldDismiss(_ sender: WhatsWrongModalViewController)
+    {
+        sender.dismiss(animated: true, completion: nil)
     }
 
 }
