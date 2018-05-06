@@ -10,7 +10,7 @@ import UIKit
 
 class MyMedicationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
-    let tableView = UITableView()
+    let tableView = UITableView(frame: .zero, style: .grouped)
     let reuseIdentifier = "medicineCell"
     
     override func viewDidLoad()
@@ -37,7 +37,6 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.separatorStyle = .none
-//        tableView.backgroundColor = .hltnLightBlue
         view.addSubview(tableView)
         
         tableView.enableAutoLayout()
@@ -67,6 +66,16 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
         }
         
         return tableViewCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let medicine = Medicine(name: "Metformin")
+        let detailsVC = MedicineDetailsViewController(medicine: medicine)
+        detailsVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(detailsVC, animated: true)
+        
     }
 
 }
