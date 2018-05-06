@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "insomnia.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "noun_1708975_303C6C.png",
       "scale" : "2x"
     },
     {
