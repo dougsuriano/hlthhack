@@ -12,6 +12,8 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
 {
     let tableView = UITableView(frame: .zero, style: .grouped)
     let reuseIdentifier = "medicineCell"
+    
+    var drugs = [Medicine]()
         
     override func viewDidLoad()
     {
@@ -27,6 +29,11 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
         
         setupTableView()
         tableView.reloadData()
+        
+        drugs = [
+            Medicine(name: "Levonorgestrel", howOften: "Once Daily", conflict: true, interactions: false, hideFeedback: false),
+            Medicine(name: "Zithromax", howOften: "Twice Daily", conflict: false, interactions: false, hideFeedback: false)
+        ]
     }
     
     private func setupTableView()
@@ -56,7 +63,7 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 5
+        return drugs.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -67,7 +74,16 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
         }
         
         cell.delegate = self
+        let med = drugs[indexPath.row]
         
+        cell.title.text = med.name
+        cell.frequency.text = med.howOften
+        
+        if med.hideFeedback
+        {
+            NSLayoutConstraint.deactivate(cell.feedbackVisibleConstraints)
+            NSLayoutConstraint.activate(cell.feedbackHiddenConstraints)
+        }
         
         return cell
     }
@@ -75,7 +91,7 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         tableView.deselectRow(at: indexPath, animated: true)
-        let medicine = Medicine(name: "Metformin", howOften: "Twice Daily")
+        let medicine = drugs[indexPath.row]
         let detailsVC = MedicineDetailsViewController(medicine: medicine)
         detailsVC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(detailsVC, animated: true)
@@ -106,6 +122,8 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
     func medicationController(_ controller: AddMedicationViewController, didAddMedicine: Medicine)
     {
         controller.dismiss(animated: true, completion: nil)
+        drugs.append(didAddMedicine)
+        tableView.reloadData()
     }
 
 }

@@ -12,7 +12,7 @@ class MedicineDetailsViewController: UIViewController, UITableViewDataSource, UI
 {
     let medicine: Medicine
     
-    let tableView = UITableView()
+    let tableView = UITableView(frame: .zero, style: .grouped)
     
     required init(medicine: Medicine)
     {
@@ -57,7 +57,14 @@ class MedicineDetailsViewController: UIViewController, UITableViewDataSource, UI
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 5
+        if section == 0 || section == 1 || section == 2
+        {
+            return 1
+        }
+        else
+        {
+            return 0
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -67,20 +74,78 @@ class MedicineDetailsViewController: UIViewController, UITableViewDataSource, UI
             return UITableViewCell()
         }
        
-        cell.iconView.image = #imageLiteral(resourceName: "badge_warn")
-        cell.titleLabel.text = "Heads up!"
-        cell.descriptionLabel.text = "This drug really fucking sucks. It's no good. Not fun. Do not use"
+        if indexPath.section == 0
+        {
+            cell.iconView.image = #imageLiteral(resourceName: "green_check_badge")
+            cell.titleLabel.text = "You're up to date"
+            cell.descriptionLabel.text = medicine.howOften
+            cell.cardView.backgroundColor = UIColor.hltnGreen
+        }
+        else if indexPath.section == 1
+        {
+            if medicine.conflict
+            {
+                cell.iconView.image = #imageLiteral(resourceName: "badge_warn")
+                cell.titleLabel.text = "Look Alive!"
+                cell.descriptionLabel.text = "BRCA1 may give you some trouble..."
+                cell.cardView.backgroundColor = UIColor.hltnOrange
+            }
+            else
+            {
+                cell.iconView.image = #imageLiteral(resourceName: "green_check_badge")
+                cell.titleLabel.text = "Great Stuff"
+                cell.descriptionLabel.text = "Your genes are happy campers!"
+                cell.cardView.backgroundColor = UIColor.hltnGreen
+            }
+        }
+        else if indexPath.section == 2
+        {
+            if medicine.interactions
+            {
+                cell.iconView.image = #imageLiteral(resourceName: "badge_warn")
+                cell.titleLabel.text = "Heads up!"
+                cell.descriptionLabel.text = "Metformin may give you some problems with Levonorgestrel."
+                cell.cardView.backgroundColor = UIColor.hltnOrange
+            }
+            else
+            {
+                cell.iconView.image = #imageLiteral(resourceName: "green_check_badge")
+                cell.titleLabel.text = "All good!"
+                cell.descriptionLabel.text = String(format: "Your genes love %@", medicine.name)
+                cell.cardView.backgroundColor = UIColor.hltnGreen
+            }
+        }
+        
+        
         
         return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?
     {
-        let view = DetailsHeaderView()
-        view.titleLabel.text = "Scheduling"
-        view.imageView.image = #imageLiteral(resourceName: "schedule_badge")
-        return view
+        if section == 0
+        {
+            let view = DetailsHeaderView()
+            view.titleLabel.text = "Scheduling"
+            view.imageView.image = #imageLiteral(resourceName: "schedule_badge")
+            return view
+        }
+        else if section == 1
+        {
+            let view = DetailsHeaderView()
+            view.titleLabel.text = "My Genes"
+            view.imageView.image = #imageLiteral(resourceName: "badge_dna")
+            return view
+        }
+        else if section == 2
+        {
+            let view = DetailsHeaderView()
+            view.titleLabel.text = "Interactions"
+            view.imageView.image = #imageLiteral(resourceName: "interactions_badge")
+            return view
+        }
         
+        return nil
     }
     
 }

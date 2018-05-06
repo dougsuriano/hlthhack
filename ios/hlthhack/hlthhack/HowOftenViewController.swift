@@ -55,10 +55,17 @@ class HowOftenViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let howOften = frequency[indexPath.row]
-        let med = Medicine(name: "Metformin", howOften: howOften)
-        let addController = navigationController?.viewControllers.first as! AddMedicationViewController
-        addController.delegate?.medicationController(addController, didAddMedicine: med)
+        let alertController = UIAlertController(title: "Heads up!", message: "Metformin may give you some problems with Levonorgestrel.", preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Okay", style: .default) { (action) in
+            let howOften = self.frequency[indexPath.row]
+            let med = Medicine(name: "Metformin", howOften: howOften, conflict: false, interactions: true, hideFeedback: true)
+            let addController = self.navigationController?.viewControllers.first as! AddMedicationViewController
+            addController.delegate?.medicationController(addController, didAddMedicine: med)
+        }
+        alertController.addAction(alertAction)
+        present(alertController, animated: true, completion: nil)
+        
+        
     }
 
 

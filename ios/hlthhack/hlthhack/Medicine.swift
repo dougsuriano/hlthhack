@@ -12,4 +12,7 @@ struct Medicine
 {
     let name: String
     let howOften: String
+    let conflict: Bool
+    let interactions: Bool
+    let hideFeedback: Bool
 }

@@ -47,11 +47,9 @@ class MedicineTableViewCell: UITableViewCell, FeedbackViewDelegate
         capsuleView.addSubview(stackView)
         
         title.numberOfLines = 0
-        title.text = "Metformin"
         stackView.addArrangedSubview(title)
         
         frequency.numberOfLines = 0
-        frequency.text = "50mg Twice a day for 7 weeks"
         stackView.addArrangedSubview(frequency)
         
         icon.contentMode = .center

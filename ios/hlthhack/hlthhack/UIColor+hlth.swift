@@ -35,4 +35,9 @@ import UIKit
     {
         return UIColor(red: 210.0 / 255.0, green: 253.0 / 255.0, blue: 255.0 / 255.0, alpha: 1.0)
     }
+    
+    class var hltnGreen: UIColor
+    {
+        return UIColor(red: 162 / 255.0, green: 190 / 255.0, blue: 125 / 255.0, alpha: 1.0)
+    }
 }
