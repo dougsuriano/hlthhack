@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MyMedicationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MedicineTableViewCellDelegate, WhatsWrongModalViewControllerDelegate
+class MyMedicationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MedicineTableViewCellDelegate, WhatsWrongModalViewControllerDelegate, AddMedicationViewControllerDelegate
 {
     let tableView = UITableView(frame: .zero, style: .grouped)
     let reuseIdentifier = "medicineCell"
@@ -49,6 +49,7 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
     @objc func addButtonTapped(_ sender: AnyObject)
     {
         let addController = AddMedicationViewController()
+        addController.delegate = self
         let navController = UINavigationController(rootViewController: addController)
         present(navController, animated: true, completion: nil)
     }
@@ -74,7 +75,7 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         tableView.deselectRow(at: indexPath, animated: true)
-        let medicine = Medicine(name: "Metformin")
+        let medicine = Medicine(name: "Metformin", howOften: "Twice Daily")
         let detailsVC = MedicineDetailsViewController(medicine: medicine)
         detailsVC.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(detailsVC, animated: true)
@@ -100,6 +101,11 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
     func whatsWrongShouldDismiss(_ sender: WhatsWrongModalViewController)
     {
         sender.dismiss(animated: true, completion: nil)
+    }
+    
+    func medicationController(_ controller: AddMedicationViewController, didAddMedicine: Medicine)
+    {
+        controller.dismiss(animated: true, completion: nil)
     }
 
 }

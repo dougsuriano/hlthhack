@@ -8,11 +8,22 @@
 
 import UIKit
 
+protocol AddMedicationViewControllerDelegate: class
+{
+    func medicationController(_ controller: AddMedicationViewController, didAddMedicine: Medicine)
+}
+
 class AddMedicationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
+    weak var delegate: AddMedicationViewControllerDelegate?
+    let titleLabel = UILabel(style: .largeTitle)
     let searchBar = UITextField()
     let emptyView = SearchAboveToGetStartedView()
     let resultsTableView = UITableView()
+    
+    let activityIndicator = UIActivityIndicatorView()
+    
+    var autocompletes = [String]()
     
     override func viewDidLoad()
     {
@@ -32,12 +43,18 @@ class AddMedicationViewController: UIViewController, UITableViewDataSource, UITa
     
     private func setupViews()
     {
+        
+        titleLabel.text = "What's new, boss?"
+        view.addSubview(titleLabel)
+        
         searchBar.layer.borderWidth = 2.0
+        searchBar.placeholder = "   Start typing name of prescription"
         searchBar.layer.borderColor = UIColor.black.cgColor
         searchBar.addTarget(self, action: #selector(textFieldDidChange(_:)), for: .editingChanged)
         view.addSubview(searchBar)
         
-        view.addSubview(emptyView)
+        view.addSubview(activityIndicator)
+
         
         resultsTableView.dataSource = self
         resultsTableView.delegate = self
@@ -48,16 +65,20 @@ class AddMedicationViewController: UIViewController, UITableViewDataSource, UITa
     
     private func setupContraints()
     {
+        titleLabel.enableAutoLayout()
+        titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: .small).activate()
+        titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -.small).activate()
+        titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: .small).activate()
+        
+        activityIndicator.enableAutoLayout()
+        activityIndicator.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -.small).activate()
+        activityIndicator.centerYAnchor.constraint(equalTo: titleLabel.centerYAnchor).activate()
+        
         searchBar.enableAutoLayout()
-        searchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: .small).activate()
+        searchBar.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: .small).activate()
         searchBar.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -.small).activate()
         searchBar.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: .small).activate()
         searchBar.heightAnchor.constraint(greaterThanOrEqualToConstant: 40.0).activate()
-        
-        emptyView.enableAutoLayout()
-        emptyView.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: .small).activate()
-        emptyView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -.small).activate()
-        emptyView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: .small).activate()
         
         resultsTableView.enableAutoLayout()
         resultsTableView.topAnchor.constraint(equalTo: searchBar.bottomAnchor, constant: .small).activate()
@@ -80,22 +101,39 @@ class AddMedicationViewController: UIViewController, UITableViewDataSource, UITa
         }
         else
         {
+            activityIndicator.startAnimating()
             emptyView.isHidden = true
             resultsTableView.isHidden = false
+            
+            if let text = searchBar.text?.lowercased(), text.starts(with: "me")
+            {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
+                    self.activityIndicator.stopAnimating()
+                    self.autocompletes = ["Metformin", "Metaxall", "Meted", "Methadone", "Methaver", "Methazel", "Methedex"]
+                    self.resultsTableView.reloadData()
+                }
+                
+            }
         }
     }
 
     // MARK: Table View Autocomplete
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 1
+        return autocompletes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "YOLO"
+        cell.textLabel?.text = autocompletes[indexPath.row]
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let howOftenVC = HowOftenViewController()
+        navigationController?.pushViewController(howOftenVC, animated: true)
     }
 }
 

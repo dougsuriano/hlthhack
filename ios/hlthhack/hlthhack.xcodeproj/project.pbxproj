@@ -31,6 +31,7 @@
 		05BDCBDA209EB1BF00E546B7 /* DetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBD9209EB1BF00E546B7 /* DetailsTableViewCell.swift */; };
 		05BDCBDC209EC5CC00E546B7 /* WhatsWrongModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBDB209EC5CC00E546B7 /* WhatsWrongModalViewController.swift */; };
 		05BDCBDE209EDF1B00E546B7 /* report.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05BDCBDD209EDF1B00E546B7 /* report.pdf */; };
+		05BDCBE0209EE6B500E546B7 /* HowOftenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBDF209EE6B500E546B7 /* HowOftenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		05BDCBD9209EB1BF00E546B7 /* DetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsTableViewCell.swift; sourceTree = "<group>"; };
 		05BDCBDB209EC5CC00E546B7 /* WhatsWrongModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsWrongModalViewController.swift; sourceTree = "<group>"; };
 		05BDCBDD209EDF1B00E546B7 /* report.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = report.pdf; sourceTree = "<group>"; };
+		05BDCBDF209EE6B500E546B7 /* HowOftenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowOftenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 				05BDCBD7209EAC7E00E546B7 /* DetailsHeaderView.swift */,
 				05BDCBD9209EB1BF00E546B7 /* DetailsTableViewCell.swift */,
 				05BDCBDB209EC5CC00E546B7 /* WhatsWrongModalViewController.swift */,
+				05BDCBDF209EE6B500E546B7 /* HowOftenViewController.swift */,
 			);
 			path = hlthhack;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				05BDCBDC209EC5CC00E546B7 /* WhatsWrongModalViewController.swift in Sources */,
 				05BDCBD4209EAAF700E546B7 /* MedicineDetailsViewController.swift in Sources */,
 				05BDCBA2209E325A00E546B7 /* main.m in Sources */,
+				05BDCBE0209EE6B500E546B7 /* HowOftenViewController.swift in Sources */,
 				05BDCBC4209E506000E546B7 /* UILabel+Util.swift in Sources */,
 				05BDCBBE209E436F00E546B7 /* AddMedicationViewController.swift in Sources */,
 				05BDCBD8209EAC7E00E546B7 /* DetailsHeaderView.swift in Sources */,

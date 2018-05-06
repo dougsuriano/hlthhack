@@ -11,4 +11,5 @@ import Foundation
 struct Medicine
 {
     let name: String
+    let howOften: String
 }

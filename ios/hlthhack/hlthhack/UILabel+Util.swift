@@ -14,6 +14,14 @@ extension UILabel
     convenience init(style: UIFontTextStyle)
     {
         self.init(frame: .zero)
-        self.font = UIFont.preferredFont(forTextStyle: style)
+        
+        if style != .largeTitle
+        {
+            self.font = UIFont.preferredFont(forTextStyle: style)
+        }
+        else
+        {
+            self.font = UIFont.boldSystemFont(ofSize: 32.0)
+        }
     }
 }
