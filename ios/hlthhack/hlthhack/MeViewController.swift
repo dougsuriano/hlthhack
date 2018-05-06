@@ -92,6 +92,18 @@ class MeViewController: UIViewController, UITableViewDataSource, UITableViewDele
     {
         return sections[section].sectionTitle
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        if indexPath.section == 1
+        {
+            let processingVC = ProcessingViewController()
+            processingVC.hidesBottomBarWhenPushed = true
+            navigationController?.pushViewController(processingVC, animated: true)
+        }
+    }
 }
 
 

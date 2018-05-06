@@ -22,6 +22,9 @@
 		05BDCBC6209E773900E546B7 /* UIButton+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC5209E773900E546B7 /* UIButton+Util.swift */; };
 		05BDCBC8209E79E900E546B7 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC7209E79E900E546B7 /* MedicineTableViewCell.swift */; };
 		05BDCBCA209E951A00E546B7 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC9209E951A00E546B7 /* MeViewController.swift */; };
+		05BDCBCC209E9DF900E546B7 /* ProcessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBCB209E9DF900E546B7 /* ProcessingViewController.swift */; };
+		05BDCBCE209EA08500E546B7 /* ExportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBCD209EA08500E546B7 /* ExportViewController.swift */; };
+		05BDCBD2209EA3D700E546B7 /* history2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 05BDCBD1209EA3D700E546B7 /* history2.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		05BDCBC5209E773900E546B7 /* UIButton+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Util.swift"; sourceTree = "<group>"; };
 		05BDCBC7209E79E900E546B7 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
 		05BDCBC9209E951A00E546B7 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		05BDCBCB209E9DF900E546B7 /* ProcessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingViewController.swift; sourceTree = "<group>"; };
+		05BDCBCD209EA08500E546B7 /* ExportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportViewController.swift; sourceTree = "<group>"; };
+		05BDCBD1209EA3D700E546B7 /* history2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = history2.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 				05BDCBC5209E773900E546B7 /* UIButton+Util.swift */,
 				05BDCBC7209E79E900E546B7 /* MedicineTableViewCell.swift */,
 				05BDCBC9209E951A00E546B7 /* MeViewController.swift */,
+				05BDCBCB209E9DF900E546B7 /* ProcessingViewController.swift */,
+				05BDCBCD209EA08500E546B7 /* ExportViewController.swift */,
+				05BDCBD1209EA3D700E546B7 /* history2.pdf */,
 			);
 			path = hlthhack;
 			sourceTree = "<group>";
@@ -209,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BDCB9F209E325A00E546B7 /* LaunchScreen.storyboard in Resources */,
+				05BDCBD2209EA3D700E546B7 /* history2.pdf in Resources */,
 				05BDCB9C209E325A00E546B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,11 +243,13 @@
 				05BDCBBE209E436F00E546B7 /* AddMedicationViewController.swift in Sources */,
 				05BDCBC0209E46CB00E546B7 /* MedicationHistoryViewController.swift in Sources */,
 				05BDCBBA209E39CF00E546B7 /* UIView+Autolayout.swift in Sources */,
+				05BDCBCC209E9DF900E546B7 /* ProcessingViewController.swift in Sources */,
 				05BDCBCA209E951A00E546B7 /* MeViewController.swift in Sources */,
 				05BDCB94209E325600E546B7 /* AppDelegate.m in Sources */,
 				05BDCBC2209E4CBF00E546B7 /* UIColor+hlth.swift in Sources */,
 				05BDCBC6209E773900E546B7 /* UIButton+Util.swift in Sources */,
 				05BDCBBC209E416800E546B7 /* MyMedicationViewController.swift in Sources */,
+				05BDCBCE209EA08500E546B7 /* ExportViewController.swift in Sources */,
 				05BDCBB8209E329500E546B7 /* RootViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
