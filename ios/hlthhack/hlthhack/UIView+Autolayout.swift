@@ -37,4 +37,9 @@ extension Inset
     {
         return 8.0
     }
+    
+    static var medium: Inset
+    {
+        return 12.0
+    }
 }
