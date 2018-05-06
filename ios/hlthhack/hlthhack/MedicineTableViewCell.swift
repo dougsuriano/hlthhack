@@ -21,6 +21,7 @@ class MedicineTableViewCell: UITableViewCell
     {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
+        
         capsuleView.backgroundColor = .hltnYellow
         capsuleView.layer.cornerRadius = 10.0
         contentView.addSubview(capsuleView)
@@ -61,6 +62,11 @@ class MedicineTableViewCell: UITableViewCell
         title.trailingAnchor.constraint(equalTo: capsuleView.trailingAnchor, constant: -.small).activate()
         title.bottomAnchor.constraint(equalTo: capsuleView.bottomAnchor, constant: -.small).activate()
         title.leadingAnchor.constraint(equalTo: spacerView.trailingAnchor).activate()
+        
+        capsuleView.layer.shadowColor = UIColor.hltnDarkBlue.cgColor
+        capsuleView.layer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+        capsuleView.layer.shadowOpacity = 0.3 * 1.0
+        capsuleView.layer.shadowRadius = 2
         
     }
     

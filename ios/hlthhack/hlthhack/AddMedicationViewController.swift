@@ -102,7 +102,7 @@ class AddMedicationViewController: UIViewController, UITableViewDataSource, UITa
 
 class SearchAboveToGetStartedView: UIView
 {
-    let icon = UIImageView(image: #imageLiteral(resourceName: "search_icon"))
+    let icon = UIImageView()
     let label = UILabel(style: .body)
     let scanButton = UIButton.hltnButton()
     

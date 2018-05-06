@@ -21,6 +21,7 @@
 		05BDCBC4209E506000E546B7 /* UILabel+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC3209E506000E546B7 /* UILabel+Util.swift */; };
 		05BDCBC6209E773900E546B7 /* UIButton+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC5209E773900E546B7 /* UIButton+Util.swift */; };
 		05BDCBC8209E79E900E546B7 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC7209E79E900E546B7 /* MedicineTableViewCell.swift */; };
+		05BDCBCA209E951A00E546B7 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC9209E951A00E546B7 /* MeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		05BDCBC3209E506000E546B7 /* UILabel+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Util.swift"; sourceTree = "<group>"; };
 		05BDCBC5209E773900E546B7 /* UIButton+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Util.swift"; sourceTree = "<group>"; };
 		05BDCBC7209E79E900E546B7 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
+		05BDCBC9209E951A00E546B7 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				05BDCBC3209E506000E546B7 /* UILabel+Util.swift */,
 				05BDCBC5209E773900E546B7 /* UIButton+Util.swift */,
 				05BDCBC7209E79E900E546B7 /* MedicineTableViewCell.swift */,
+				05BDCBC9209E951A00E546B7 /* MeViewController.swift */,
 			);
 			path = hlthhack;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				05BDCBBE209E436F00E546B7 /* AddMedicationViewController.swift in Sources */,
 				05BDCBC0209E46CB00E546B7 /* MedicationHistoryViewController.swift in Sources */,
 				05BDCBBA209E39CF00E546B7 /* UIView+Autolayout.swift in Sources */,
+				05BDCBCA209E951A00E546B7 /* MeViewController.swift in Sources */,
 				05BDCB94209E325600E546B7 /* AppDelegate.m in Sources */,
 				05BDCBC2209E4CBF00E546B7 /* UIColor+hlth.swift in Sources */,
 				05BDCBC6209E773900E546B7 /* UIButton+Util.swift in Sources */,

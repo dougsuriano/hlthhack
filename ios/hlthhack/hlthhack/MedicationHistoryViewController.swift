@@ -15,7 +15,7 @@ class MedicationHistoryViewController: UIViewController
     {
         super.viewDidLoad()
 
-        title = "Medication History"
+        title = "History"
         
         navigationController?.navigationBar.prefersLargeTitles = true
     }

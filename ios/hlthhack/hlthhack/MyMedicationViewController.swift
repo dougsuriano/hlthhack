@@ -16,6 +16,8 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+//        view.backgroundColor = .hltnLightBlue
 
         self.title = "My Medications"
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -35,6 +37,7 @@ class MyMedicationViewController: UIViewController, UITableViewDataSource, UITab
         tableView.estimatedRowHeight = 100.0
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.separatorStyle = .none
+//        tableView.backgroundColor = .hltnLightBlue
         view.addSubview(tableView)
         
         tableView.enableAutoLayout()
