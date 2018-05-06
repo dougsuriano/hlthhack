@@ -1,0 +1,98 @@
+[{"name":"levonorgestrel",
+  "ID": "0",
+  "gene_data": {"conflicts":
+                      ["PGR",
+                        "SRD5A1",
+                        "ESR1",
+                        "AR"
+                      ]
+             },
+    "Schedule": {"amount": "0.1/0.02 mg",
+                 "times": "1 time a day",
+                 "start": "05/05/18",
+                 "end": "05/05/19"
+               },
+    "drug_data": {"conflicts":
+                        ["Insulin Lispro"
+                        ]
+                }
+    },
+    {"name": "ibuprofen",
+      "ID":"1",
+      "gene_data": {"conflicts":
+                      [ "PTGS2",
+                        "ASIC1",
+                        "DDIT3",
+                        "PTGER4",
+                        "APC",
+                        "ABCB1",
+                        "CYP1A2",
+                        "CYP1A2",
+                        "c"
+                      ]
+                    },
+      "Schedule": {"amount": "200 mg",
+                   "times": "as needed",
+                   "start": "06/03/17",
+                   "end": "05/05/20"
+                    },
+      "drug_data": {"conflicts":
+                      ["Lepirudin",
+                       "Propranolol",
+                       "Fenoprofen"
+                      ]
+                    }
+      },
+      {"name": "metformin",
+        "ID":"2",
+        "gene_data": {"conflicts":
+                        [ "MTOR",
+                          "ACACB",
+                          "BRCA1",
+                          "BRCA2",
+                          "SLC47A1",
+                          "ERBB2",
+                          "STK11",
+                          "KRAS",
+                          "IDH1"
+                        ]
+                      },
+        "Schedule": {"amount": "8.5 mL",
+                     "times": "1 time a day",
+                     "start": "05/03/16",
+                     "end": "05/05/21"
+                      },
+        "drug_data": {"conflicts":
+                        ["Levonorgestrel",
+                          "Insulin Lispro"
+                        ]
+                     }
+        },
+        {"name": "zithromax",
+          "ID":"3",
+          "gene_data": {"conflicts":
+                          [ "MLNR",
+                          "ADCYAP1R1",
+                          "VIPR1",
+                          "VIPR2",
+                          "TFPI",
+                          "NOS1",
+                          "XDH",
+                          "PADI4",
+                          "ABCC1",
+                          "PTGS1",
+                          "CPT2",
+                          "SLC5A8"
+                          ]
+                        },
+          "Schedule": {"amount": "600 mg",
+                       "times": "1 time a day",
+                       "start": "05/07/16",
+                       "end": "03/06/18"
+                        },
+          "drug_data": {"conflicts":
+                          ["Leuprolide"
+                          ]
+                        }
+          }
+]
