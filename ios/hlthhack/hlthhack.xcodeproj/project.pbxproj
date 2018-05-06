@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05BDCB94209E325600E546B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCB93209E325600E546B7 /* AppDelegate.m */; };
+		05BDCB9C209E325A00E546B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BDCB9B209E325A00E546B7 /* Assets.xcassets */; };
+		05BDCB9F209E325A00E546B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05BDCB9D209E325A00E546B7 /* LaunchScreen.storyboard */; };
+		05BDCBA2209E325A00E546B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBA1209E325A00E546B7 /* main.m */; };
+		05BDCBAC209E325A00E546B7 /* hlthhackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBAB209E325A00E546B7 /* hlthhackTests.m */; };
+		05BDCBB8209E329500E546B7 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBB7209E329500E546B7 /* RootViewController.swift */; };
+		05BDCBBA209E39CF00E546B7 /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBB9209E39CF00E546B7 /* UIView+Autolayout.swift */; };
+		05BDCBBC209E416800E546B7 /* MyMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBB209E416800E546B7 /* MyMedicationViewController.swift */; };
+		05BDCBBE209E436F00E546B7 /* AddMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBD209E436F00E546B7 /* AddMedicationViewController.swift */; };
+		05BDCBC0209E46CB00E546B7 /* MedicationHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */; };
+		05BDCBC2209E4CBF00E546B7 /* UIColor+hlth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC1209E4CBF00E546B7 /* UIColor+hlth.swift */; };
+		05BDCBC4209E506000E546B7 /* UILabel+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC3209E506000E546B7 /* UILabel+Util.swift */; };
+		05BDCBC6209E773900E546B7 /* UIButton+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC5209E773900E546B7 /* UIButton+Util.swift */; };
+		05BDCBC8209E79E900E546B7 /* MedicineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BDCBC7209E79E900E546B7 /* MedicineTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		05BDCBA8209E325A00E546B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05BDCB87209E325600E546B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05BDCB8E209E325600E546B7;
+			remoteInfo = hlthhack;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05BDCB8F209E325600E546B7 /* hlthhack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hlthhack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BDCB92209E325600E546B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05BDCB93209E325600E546B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05BDCB9B209E325A00E546B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05BDCB9E209E325A00E546B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05BDCBA0209E325A00E546B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BDCBA1209E325A00E546B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05BDCBA7209E325A00E546B7 /* hlthhackTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hlthhackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05BDCBAB209E325A00E546B7 /* hlthhackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hlthhackTests.m; sourceTree = "<group>"; };
+		05BDCBAD209E325A00E546B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BDCBB6209E329500E546B7 /* hlthhack-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hlthhack-Bridging-Header.h"; sourceTree = "<group>"; };
+		05BDCBB7209E329500E546B7 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		05BDCBB9209E39CF00E546B7 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
+		05BDCBBB209E416800E546B7 /* MyMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMedicationViewController.swift; sourceTree = "<group>"; };
+		05BDCBBD209E436F00E546B7 /* AddMedicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMedicationViewController.swift; sourceTree = "<group>"; };
+		05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationHistoryViewController.swift; sourceTree = "<group>"; };
+		05BDCBC1209E4CBF00E546B7 /* UIColor+hlth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hlth.swift"; sourceTree = "<group>"; };
+		05BDCBC3209E506000E546B7 /* UILabel+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Util.swift"; sourceTree = "<group>"; };
+		05BDCBC5209E773900E546B7 /* UIButton+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Util.swift"; sourceTree = "<group>"; };
+		05BDCBC7209E79E900E546B7 /* MedicineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05BDCB8C209E325600E546B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BDCBA4209E325A00E546B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05BDCB86209E325600E546B7 = {
+			isa = PBXGroup;
+			children = (
+				05BDCB91209E325600E546B7 /* hlthhack */,
+				05BDCBAA209E325A00E546B7 /* hlthhackTests */,
+				05BDCB90209E325600E546B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05BDCB90209E325600E546B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05BDCB8F209E325600E546B7 /* hlthhack.app */,
+				05BDCBA7209E325A00E546B7 /* hlthhackTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05BDCB91209E325600E546B7 /* hlthhack */ = {
+			isa = PBXGroup;
+			children = (
+				05BDCB92209E325600E546B7 /* AppDelegate.h */,
+				05BDCB93209E325600E546B7 /* AppDelegate.m */,
+				05BDCB9B209E325A00E546B7 /* Assets.xcassets */,
+				05BDCB9D209E325A00E546B7 /* LaunchScreen.storyboard */,
+				05BDCBA0209E325A00E546B7 /* Info.plist */,
+				05BDCBA1209E325A00E546B7 /* main.m */,
+				05BDCBB7209E329500E546B7 /* RootViewController.swift */,
+				05BDCBB6209E329500E546B7 /* hlthhack-Bridging-Header.h */,
+				05BDCBB9209E39CF00E546B7 /* UIView+Autolayout.swift */,
+				05BDCBBB209E416800E546B7 /* MyMedicationViewController.swift */,
+				05BDCBBD209E436F00E546B7 /* AddMedicationViewController.swift */,
+				05BDCBBF209E46CB00E546B7 /* MedicationHistoryViewController.swift */,
+				05BDCBC1209E4CBF00E546B7 /* UIColor+hlth.swift */,
+				05BDCBC3209E506000E546B7 /* UILabel+Util.swift */,
+				05BDCBC5209E773900E546B7 /* UIButton+Util.swift */,
+				05BDCBC7209E79E900E546B7 /* MedicineTableViewCell.swift */,
+			);
+			path = hlthhack;
+			sourceTree = "<group>";
+		};
+		05BDCBAA209E325A00E546B7 /* hlthhackTests */ = {
+			isa = PBXGroup;
+			children = (
+				05BDCBAB209E325A00E546B7 /* hlthhackTests.m */,
+				05BDCBAD209E325A00E546B7 /* Info.plist */,
+			);
+			path = hlthhackTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05BDCB8E209E325600E546B7 /* hlthhack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BDCBB0209E325A00E546B7 /* Build configuration list for PBXNativeTarget "hlthhack" */;
+			buildPhases = (
+				05BDCB8B209E325600E546B7 /* Sources */,
+				05BDCB8C209E325600E546B7 /* Frameworks */,
+				05BDCB8D209E325600E546B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hlthhack;
+			productName = hlthhack;
+			productReference = 05BDCB8F209E325600E546B7 /* hlthhack.app */;
+			productType = "com.apple.product-type.application";
+		};
+		05BDCBA6209E325A00E546B7 /* hlthhackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05BDCBB3209E325A00E546B7 /* Build configuration list for PBXNativeTarget "hlthhackTests" */;
+			buildPhases = (
+				05BDCBA3209E325A00E546B7 /* Sources */,
+				05BDCBA4209E325A00E546B7 /* Frameworks */,
+				05BDCBA5209E325A00E546B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05BDCBA9209E325A00E546B7 /* PBXTargetDependency */,
+			);
+			name = hlthhackTests;
+			productName = hlthhackTests;
+			productReference = 05BDCBA7209E325A00E546B7 /* hlthhackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05BDCB87209E325600E546B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = wiestyfbaby;
+				TargetAttributes = {
+					05BDCB8E209E325600E546B7 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					05BDCBA6209E325A00E546B7 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 05BDCB8E209E325600E546B7;
+					};
+				};
+			};
+			buildConfigurationList = 05BDCB8A209E325600E546B7 /* Build configuration list for PBXProject "hlthhack" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05BDCB86209E325600E546B7;
+			productRefGroup = 05BDCB90209E325600E546B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05BDCB8E209E325600E546B7 /* hlthhack */,
+				05BDCBA6209E325A00E546B7 /* hlthhackTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05BDCB8D209E325600E546B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BDCB9F209E325A00E546B7 /* LaunchScreen.storyboard in Resources */,
+				05BDCB9C209E325A00E546B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BDCBA5209E325A00E546B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05BDCB8B209E325600E546B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BDCBC8209E79E900E546B7 /* MedicineTableViewCell.swift in Sources */,
+				05BDCBA2209E325A00E546B7 /* main.m in Sources */,
+				05BDCBC4209E506000E546B7 /* UILabel+Util.swift in Sources */,
+				05BDCBBE209E436F00E546B7 /* AddMedicationViewController.swift in Sources */,
+				05BDCBC0209E46CB00E546B7 /* MedicationHistoryViewController.swift in Sources */,
+				05BDCBBA209E39CF00E546B7 /* UIView+Autolayout.swift in Sources */,
+				05BDCB94209E325600E546B7 /* AppDelegate.m in Sources */,
+				05BDCBC2209E4CBF00E546B7 /* UIColor+hlth.swift in Sources */,
+				05BDCBC6209E773900E546B7 /* UIButton+Util.swift in Sources */,
+				05BDCBBC209E416800E546B7 /* MyMedicationViewController.swift in Sources */,
+				05BDCBB8209E329500E546B7 /* RootViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05BDCBA3209E325A00E546B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05BDCBAC209E325A00E546B7 /* hlthhackTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05BDCBA9209E325A00E546B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05BDCB8E209E325600E546B7 /* hlthhack */;
+			targetProxy = 05BDCBA8209E325A00E546B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		05BDCB9D209E325A00E546B7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05BDCB9E209E325A00E546B7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		05BDCBAE209E325A00E546B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		05BDCBAF209E325A00E546B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05BDCBB1209E325A00E546B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hlthhack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiestyfbaby.hlthhack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hlthhack/hlthhack-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		05BDCBB2209E325A00E546B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hlthhack/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiestyfbaby.hlthhack;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "hlthhack/hlthhack-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		05BDCBB4209E325A00E546B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hlthhackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiestyfbaby.hlthhackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hlthhack.app/hlthhack";
+			};
+			name = Debug;
+		};
+		05BDCBB5209E325A00E546B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = hlthhackTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wiestyfbaby.hlthhackTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hlthhack.app/hlthhack";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05BDCB8A209E325600E546B7 /* Build configuration list for PBXProject "hlthhack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BDCBAE209E325A00E546B7 /* Debug */,
+				05BDCBAF209E325A00E546B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BDCBB0209E325A00E546B7 /* Build configuration list for PBXNativeTarget "hlthhack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BDCBB1209E325A00E546B7 /* Debug */,
+				05BDCBB2209E325A00E546B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05BDCBB3209E325A00E546B7 /* Build configuration list for PBXNativeTarget "hlthhackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05BDCBB4209E325A00E546B7 /* Debug */,
+				05BDCBB5209E325A00E546B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05BDCB87209E325600E546B7 /* Project object */;
+}
