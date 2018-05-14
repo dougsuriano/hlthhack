@@ -1,0 +1,62 @@
+PITCH OUTLINE:
+
+
+
+With advent of sequencing as users we want to improve not only our health but that of friends, family, and everyone!
+
+
+Engineering questions:
+-Actionability (how do i use my genetic information?)
+-Interpretability (what does this mean for my health?)
+
+
+SOLUTION
+Beautiful app people will want to use to manage their prescriptions and give feedback in real time.
+
+
+
+We are logged in. Personal genomic data.
+Look at our current prescriptions.
+	show genomic risk factor.
+	All information from published DBs.
+
+Give feedback on efficacy.
+	Feel worse.
+	Tracking all of this.
+	Valuable time series data
+
+Let’s add a drug to our repertoire
+	Uses published drug-drug conflicts
+
+I’m concerned export data to show to physician.
+	Relevant Genetic make up
+	Can help us more efficiently.
+
+
+Further Incentivize people to engage with the app via gamification or product rewards.
+These data are brand new!
+Best drugs for me.
+Understanding side effects unique to me.
+Forming communities around these data.
+Supportive communities around similar medical outcomes.
+
+Rx.me is beautiful and fun way to use my genetic information to improve my health and health of the community.
+
+
+
+
+
+NEXT STEPS:
+
+
+
+Doctor-facing app.
+Opioid specific workflow.
+
+
+QUESTIONS:
+	Money? Sell the data.
+	Recreational Drugs? Why the hell not?
+	Use encryption. Signal protocol. 
+	Liability? Big disclaimer at the start.
+	Why open? Diary of your health.
